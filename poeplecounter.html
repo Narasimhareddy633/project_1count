@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label id="count-label">0</label><br><br>
+    <button id="btn-1" onclick="inc()">Increase</button>
+    <button id="btn-2" onclick="res()">reset</button>
+    <button id="btn-3" onclick="dec()">decrease</button>
+    <script>
+        let count=0;
+        function inc()
+        {
+            count=count+1;
+            document.getElementById("count-label").innerHTML=count;
+            
+        }
+        function dec()
+        {
+            count=count-1;
+            document.getElementById("count-label").innerHTML=count;
+
+        }
+        function res()
+        {
+            count=0;
+            document.getElementById("count-label").innerHTML=count;
+        }
+    </script>
+
+</body>
+</html>
